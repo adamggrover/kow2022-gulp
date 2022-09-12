@@ -1,6 +1,6 @@
 const { src, dest, watch, series } = require('gulp');
 const postcss = require('gulp-postcss');
-const sharpResponsive = require("gulp-sharp-responsive");
+// const sharpResponsive = require("gulp-sharp-responsive");
 
 const cssnano = require('cssnano');
 const terser = require('gulp-terser');
@@ -44,8 +44,8 @@ function browsersyncReload(cb){
 
 //Sharp Responsive Task
 
-const img = () => src("src/assets/images/**/*.{jpg,png}")
-  .pipe(sharpResponsive({
+//const img = () => src("src/assets/images/**/*.{jpg,png}")
+/*  .pipe(sharpResponsive({
     formats: [
       { width: 440, jpegOptions: { quality: 70, progressive: true }, rename: { suffix: "-sm" } },
       { width: 740, jpegOptions: { quality: 70, progressive: true }, rename: { suffix: "-md" } },
@@ -54,6 +54,7 @@ const img = () => src("src/assets/images/**/*.{jpg,png}")
     ]
   }))
   .pipe(dest("dist/images"));
+ */ 
 
 // Watch Task
 function watchTask(){
@@ -66,7 +67,7 @@ function watchTask(){
 exports.default = series(
     scssTask,
     jsTask,
-    img,
+   // img,
     browsersyncServe,    
     watchTask
 )
