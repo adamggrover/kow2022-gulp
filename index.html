@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- Link to main script file-->
-    <script src="src/js/main.js"></script>
+    <script src="dist/js/main.js"></script>
 
 </head>
 
@@ -737,7 +737,7 @@
         <div class="footer-content container">
             <div class="row footer-logo">
                 <div class="col-sm-4">
-                    <img src="Assets/logos/KINGS ACADEMY ICON.svg" alt="Kings Academy Icon" class="footer-icon">
+                    <img src="Assets/logos/kings-icon.svg" alt="Kings Academy Icon" class="footer-icon">
                 </div>
 
             </div>
@@ -784,11 +784,110 @@
     <script>
         AOS.init();
       </script>
-
-      <!-- JavaScript Bundle with Popper -->
+     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <!-- jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+<!-- jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--Slick slider-->   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+
+<script>
+
+
+$(document).ready(function(){
+
+$('.slider').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: true,
+fade: true,
+autoplaySpeed: 5000,
+speed: 2000,
+cssEase: 'ease-in-out',
+dots: false,
+touchMove: false,
+arrows:true
+});
+
+
+
+$('.news-carousel').slick({
+
+slidesToShow: 3,
+slidesToScroll: 1,
+autoplay: false,
+
+
+dots:false,
+
+responsive: [{
+breakpoint: 1024,
+settings: {
+slidesToShow: 3,
+slidesToScroll: 1,
+//centerMode: true,
+
+}
+
+}, {
+breakpoint: 800,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 2,
+dots: true,
+infinite: true,
+
+}
+},  {
+breakpoint: 480,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1,
+dots: true,
+infinite: true,
+autoplay: true,
+autoplaySpeed: 2000,
+}
+}]
+});
+
+$('.announcement-slider').slick({
+autoplay: true,
+arrows: false,
+autoplaySpeed: 4000
+
+});
+
+$('.announcement-div-slider').slick({
+autoplay: true,
+arrows: false,
+autoplaySpeed: 6000
+
+});
+
+
+});
+
+
+
+
+</script>
+  
+
+
+
+
+
+</body>
+</html>
+
+
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script> 
    <!--Slick slider-->   
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>

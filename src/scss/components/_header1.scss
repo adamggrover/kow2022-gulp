@@ -24,7 +24,7 @@
   align-self: center;
   flex: 1 0 auto;
   justify-self: center;
-  content: url(../../Assets/logos/kings-academy-landscape-logo.svg);
+  content: url(/Assets/logos/kings-academy-landscape-logo.svg);
   
   
   
@@ -140,4 +140,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #site-search-icon{
     color: white;
+}
+
+header{
+    button{
+        background-color: transparent;
+        border: none;
+    }
 }

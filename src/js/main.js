@@ -1,11 +1,3 @@
-// Header change on scroll
-
-if ( document.URL.includes("index") ) {
-    window.onscroll = function() {
-        headerBackground();
-        logoChange();
-        };
-}
 
 
 // When the user scrolls down 50px from the top of the document, change the header's background color
@@ -40,6 +32,16 @@ function logoChange(){
       }
     });
 };
+
+// Header change on scroll
+
+if ( document.URL.includes("index") ) {
+  window.onscroll = function() {
+      headerBackground();
+      logoChange();
+      };
+}
+
 
 //Search Bar
 
