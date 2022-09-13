@@ -59,7 +59,9 @@ function browsersyncReload(cb){
 // Watch Task
 function watchTask(){
     watch('*html', browsersyncReload);
-    watch(['src/scss/**/*.scss', 'src/js/**/*.js']), series(scssTask, jsTask, browsersyncReload);
+    watch(['src/scss/**/*.scss', 'src/js/**/*.js']), series(scssTask, jsTask, 
+        //browsersyncReload
+        );
 
 }
 
@@ -68,6 +70,6 @@ exports.default = series(
     scssTask,
     jsTask,
    // img,
-    browsersyncServe,    
+    //browsersyncServe,    
     watchTask
 )

@@ -36,6 +36,13 @@ $success: #7952b3;
 
 // Configuration
 @import "bootstrap/scss/functions";
+
+//Variable Overrides
+
+$font-family-base: 'Archivo', sans-serif;
+
+
+//Other config imports
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
