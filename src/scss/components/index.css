@@ -1,0 +1,657 @@
+@charset "UTF-8";
+#announcement-area {
+  background-color: #5B2A84;
+  color: white;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.announcement-div-container-box {
+  padding-top: 4rem;
+}
+
+.announcement-div-content a {
+  color: white;
+}
+
+.announcement-div-content {
+  padding-top: 1rem;
+}
+
+.news-archive {
+  padding-bottom: 15rem;
+}
+
+/* CALENDAR SECTION */
+#calendar-section {
+  padding-bottom: 7rem;
+  padding-top: 5rem;
+  background-color: #F5F5F5;
+}
+
+.calendar-card {
+  background-color: #5B2A84;
+  padding: 0 2rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  min-height: 20rem;
+  color: white;
+  border-radius: 0;
+  border: #F5F5F5 solid 1rem;
+}
+
+.calendar-card:hover {
+  background-color: #BFD630;
+}
+
+.calendar-card-group {
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+/* Bell Animation */
+.faa-ring {
+  color: red;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    transform: rotate(-15deg);
+  }
+  2% {
+    transform: rotate(15deg);
+  }
+  4% {
+    transform: rotate(-18deg);
+  }
+  6% {
+    transform: rotate(18deg);
+  }
+  8% {
+    transform: rotate(-22deg);
+  }
+  10% {
+    transform: rotate(22deg);
+  }
+  12% {
+    transform: rotate(-18deg);
+  }
+  14% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-12deg);
+  }
+  18% {
+    transform: rotate(12deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ring {
+  0% {
+    transform: rotate(-15deg);
+  }
+  2% {
+    transform: rotate(15deg);
+  }
+  4% {
+    transform: rotate(-18deg);
+  }
+  6% {
+    transform: rotate(18deg);
+  }
+  8% {
+    transform: rotate(-22deg);
+  }
+  10% {
+    transform: rotate(22deg);
+  }
+  12% {
+    transform: rotate(-18deg);
+  }
+  14% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-12deg);
+  }
+  18% {
+    transform: rotate(12deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+}
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-ring {
+  -webkit-animation: ring 3s ease infinite;
+  animation: ring 3s ease infinite;
+  transform-origin-x: 50%;
+  transform-origin-y: 0px;
+  transform-origin-z: initial;
+}
+
+/* FOOTER SECTION */
+footer {
+  background-color: #231F20;
+  padding: 1.5rem 2rem 2rem 2rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #BFD630;
+}
+
+.footer-column {
+  margin-top: 1rem;
+}
+
+.footer-text {
+  color: white;
+}
+
+.footer-spacer {
+  display: inline-block;
+  width: 0.7rem;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.wlt-white {
+  max-width: 20rem;
+  height: auto;
+  margin-left: -1.3rem;
+  padding-top: 3rem;
+}
+
+.footer-icon {
+  margin-left: -1.7rem;
+  max-width: 7rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 1 auto;
+}
+
+.header1 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: 0.1s;
+}
+
+.logo1 {
+  max-width: 18rem;
+  align-self: center;
+  flex: 1 0 auto;
+  justify-self: center;
+  content: url(../../Assets/logos/kings-academy-landscape-logo.svg);
+}
+
+.header-icon, header a {
+  color: white;
+}
+
+.header-icon:hover, header a:hover {
+  color: #BFD630;
+}
+
+.hamburger-col {
+  flex: 0 1 auto;
+  font-size: 2rem;
+}
+
+.hamburger {
+  margin-left: 0.5rem;
+}
+
+.social {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1.7rem;
+  padding-right: 1.5rem;
+  justify-content: flex-end;
+  flex: 0 1 auto;
+  align-self: flex-start;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links:target {
+  text-decoration: none;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Header Search */
+#header-search-container {
+  width: 100%;
+  background-color: #BFD630;
+  padding: 0;
+  height: 0; /*  change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-y: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.search-input-box {
+  padding-top: 0.6rem;
+  padding-bottom: 0.2rem;
+}
+
+#site-search {
+  padding-bottom: 0.4rem;
+}
+
+#header {
+  transition: margin-top 0.5s;
+  padding: 20px;
+}
+
+#site-search {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding-left: 1rem;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+#site-search-icon {
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 1 auto;
+}
+
+.header2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: 0.1s;
+  background-color: #231F20;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 1 auto;
+}
+
+.logo2 {
+  max-width: 5rem;
+  align-self: center;
+  flex: 1 0 auto;
+  justify-self: center;
+  content: url(../../Assets/logos/KINGS\ ACADEMY\ ICON.svg);
+}
+
+/*HERO Slider*/
+.slide {
+  width: 100vw;
+  height: 100vh;
+  /*background:#CCC;*/
+}
+
+.slider {
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.overlay-hero {
+  background-image: linear-gradient(rgba(9, 9, 9, 0.2), rgba(0, 0, 0, 0), rgba(9, 9, 9, 0.2));
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slide-2 {
+  background: url(../../Assets/images/hockey-church.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.slide-3 {
+  background: url(../../Assets/images/3d-printer.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.slide-4 {
+  background: url(../../Assets/images/boy-on-pc.jpg) center no-repeat;
+  background-size: cover;
+}
+
+/* Announcement Slider */
+.announcement-wrapper {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 1rem;
+}
+
+.announcement-box {
+  background-color: #5B2A84;
+  width: 15rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+  flex: 1 1 auto;
+}
+
+.hero-wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-wrapper a {
+  color: white;
+}
+
+.hero-wrapper a:hover {
+  color: #BFD630;
+}
+
+.announcement-content {
+  padding-top: 1.5rem;
+}
+
+.bell-background {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 25rem;
+  background-color: #5B2A84;
+  text-align: center;
+  display: flex;
+  border: 1px solid white;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  right: 2.5rem;
+  bottom: 4rem;
+}
+
+.ringing-bell {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  color: white;
+  transition: translate(-50%, -50%);
+}
+
+.hero-arrow-container {
+  position: absolute;
+  bottom: 1.2rem;
+  width: 100%;
+}
+
+.hero-banner-text-container {
+  position: absolute;
+  bottom: 4.5rem;
+  width: 100%;
+}
+
+/* Sidebar Navigation */
+#sidebar-nav {
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 1s; /* 1 second transition effect to slide in the sidenav */
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+main {
+  transition: margin-left 0.5s;
+}
+
+/* Navbar */
+#MainMenu {
+  width: 100%;
+}
+
+#MainMenu * {
+  color: #231F20;
+}
+
+.list-group.panel > .list-group-item {
+  border-radius: 0;
+  border: none;
+}
+
+/*
+a.list-group-item:hover{
+  background-color: rgb(95, 175, 95);
+}
+*/
+.list-group-item {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0.5rem;
+}
+
+.list-group-item:last-child {
+  border-radius: 0;
+}
+
+.list-group-item:first-child {
+  border-radius: 0;
+}
+
+.list-group-item-success {
+  color: white;
+}
+
+#MainMenu a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-arrow {
+  padding-left: 1rem;
+}
+
+#news {
+  background-color: #F5F5F5;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  border-radius: 0;
+  border: #F5F5F5 solid 1rem;
+}
+
+.card-top {
+  height: 15rem;
+  width: 100%;
+}
+
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0;
+}
+
+.news-row {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card-body {
+  min-height: 11rem;
+}
+
+.card-body {
+  pointer-events: none;
+}
+
+#main-page-area {
+  min-height: 80rem;
+  background-color: #F5F5F5;
+  padding-top: 6rem;
+  max-width: 70rem;
+}
+
+.content-header-breadcrumb {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.content-header-breadcrumb-links {
+  color: #BFD630;
+}
+
+.breadcrumb-spacer {
+  width: 0.5rem;
+}
+
+.content-header-social {
+  display: flex;
+  justify-content: end;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .content-header-social {
+    display: flex;
+    justify-content: start;
+  }
+}
+#content-h1 {
+  color: #3A006B;
+  margin-top: 3rem;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+#content-body p:first-child, #content-body p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.content-column {
+  padding-bottom: 10rem;
+}
+
+#content-body {
+  margin-top: 2rem;
+}
+
+#sidebar-section-nav {
+  background-color: #3A006B;
+  width: 100%;
+  min-height: 40rem;
+}
+
+.post-content-column {
+  margin-bottom: 10rem;
+}
+
+#single-post-main-page-area {
+  min-height: 80rem;
+  background-color: #F5F5F5;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 55rem;
+}
+
+#post-image-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#post-image {
+  max-height: 30rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+/* WELCOME SECTION */
+#welcome {
+  padding-top: 2rem;
+  background-color: #F5F5F5;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,143 @@
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 1 auto;    
+    
+}
+
+.header1{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: 0.1s;   
+
+}
+
+
+
+.logo1{
+  max-width: 18rem;
+  align-self: center;
+  flex: 1 0 auto;
+  justify-self: center;
+  content: url(../../Assets/logos/kings-academy-landscape-logo.svg);
+  
+  
+  
+}
+
+
+.header-icon, header a{
+    color: white;
+    
+}
+
+.header-icon:hover, header a:hover{
+    color: #BFD630;
+    
+}
+
+
+
+
+
+
+.hamburger-col{
+    flex: 0 1 auto;
+    
+    font-size: 2rem;
+    
+  
+}
+
+.hamburger{
+    margin-left: .5rem;
+}
+
+.social{
+    font-size: 1.2rem;    
+    display: flex;
+    gap: 1.7rem;
+    padding-right: 1.5rem;
+    justify-content: flex-end;
+    flex: 0 1 auto;
+    align-self: flex-start;
+  
+}
+
+.social-links{
+    display: flex;
+
+}
+
+.social-links:target{
+    text-decoration: none;
+}
+
+.nav-box{
+    display: flex;
+    justify-content: flex-start;
+    
+    
+}
+
+/* Header Search */
+
+#header-search-container{
+    width: 100%;
+    background-color: #BFD630;
+    padding: 0;
+
+    height: 0; /*  change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    
+    overflow-y: hidden; /* Disable horizontal scroll */
+    
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+}
+
+.search-input-box{
+    padding-top: 0.6rem;
+    padding-bottom: 0.2rem;
+   
+}
+
+#site-search{
+    padding-bottom: 0.4rem;
+}
+
+
+
+#header {
+    transition: margin-top .5s;
+    padding: 20px;
+  }
+
+#site-search{
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    padding-left: 1rem;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+#site-search-icon{
+    color: white;
+}

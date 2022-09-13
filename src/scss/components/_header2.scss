@@ -1,0 +1,35 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 1 auto;    
+    
+}
+
+.header2 {
+     
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: 0.1s;   
+    background-color: #231F20;
+    
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 1 auto;   
+
+}
+
+
+.logo2{
+    max-width: 5rem;
+    align-self: center;
+    flex: 1 0 auto;
+    justify-self: center;
+    content: url(../../Assets/logos/KINGS\ ACADEMY\ ICON.svg);
+    
+  }

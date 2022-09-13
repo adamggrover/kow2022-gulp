@@ -1,0 +1,29 @@
+.post-content-column{
+
+    margin-bottom: 10rem;
+    
+}
+
+#single-post-main-page-area{
+    min-height: 80rem;
+    background-color: #F5F5F5;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 55rem;
+    
+}
+
+#post-image-container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+#post-image{
+    max-height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}

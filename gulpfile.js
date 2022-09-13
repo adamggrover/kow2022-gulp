@@ -13,7 +13,7 @@ function scssTask(){
     return src('src/scss/styles.scss', {sourcemaps : true})
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(dest('dist/css', {sourcemaps: '.'}));
+    .pipe(dest('dist/css/styles.css', {sourcemaps: '.'}));
 }
 
 // Js Task
@@ -59,7 +59,7 @@ function browsersyncReload(cb){
 // Watch Task
 function watchTask(){
     watch('*html', browsersyncReload);
-    watch(['src/scss/**/*.scss', 'src/js/**/*.js', "src/assets/images/**/*.{jpg,png}"]), series(scssTask, jsTask, browsersyncReload);
+    watch(['src/scss/**/*.scss', 'src/js/**/*.js']), series(scssTask, jsTask, browsersyncReload);
 
 }
 

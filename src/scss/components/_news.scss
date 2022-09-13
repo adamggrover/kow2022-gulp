@@ -1,0 +1,38 @@
+#news{
+  background-color: #F5F5F5 ;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+ 
+
+}
+
+.card{
+  border-radius: 0;
+  border: #F5F5F5 solid 1rem;
+}
+
+.card-top{
+    height: 15rem; 
+    width: 100%;
+    
+    
+}
+
+.card-img-top{
+  object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+}
+
+.news-row{
+  height: fit-content;
+}
+
+.card-body{
+  min-height: 11rem;
+}
+
+.card-body{
+  pointer-events: none;
+}
+

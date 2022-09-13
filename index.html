@@ -4,12 +4,881 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starter Template</title>
-    <link rel="stylesheet" href="/dist/css/styles.css">
-</head>
-<body>
+    <title>Homepage</title>
 
-    <h1>Hello World!</h1>
+    <!--Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/c3ed52941f.js" crossorigin="anonymous"></script>
+   
+   
+    <!--Link to AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link to Slick-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <!--Link to style sheet-->
+    <link rel="stylesheet" href="dist/css/styles.css/styles.css">
+    <!-- Link to Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Link to main script file-->
+    <script src="src/js/main.js"></script>
+
+</head>
+
+<body>
     
+
+    <div id="sidebar-nav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="row">
+            <div class="col-md m-0 p-5">
+              
+              <!-- menu -->
+              <div id="MainMenu">
+                <div class="list-group panel">
+                  <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Home</a>
+                  <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Our Academy<i class="fa fa-caret-down nav-arrow"></i></a>
+                  <div class="collapse" id="demo3">
+                    <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down nav-arrow"></i></a>
+                    <div class="collapse list-group-submenu" id="SubMenu1">
+                      <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+                      <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+                      <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down nav-arrow"></i></a>
+                      <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+                      </div>
+                      <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+                    </div>
+                    <a href="javascript:;" class="list-group-item">Subitem 2</a>
+                    <a href="javascript:;" class="list-group-item">Subitem 3</a>
+                  </div>
+                  <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 4  <i class="fa fa-caret-down nav-arrow"></i></a>
+                  <div class="collapse" id="demo4">
+                    <a href="" class="list-group-item">Subitem 1</a>
+                    <a href="" class="list-group-item">Subitem 2</a>
+                    <a href="" class="list-group-item">Subitem 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    
+
+<main>
+    
+<div class="hero-wrapper" id="hero-wrapper">
+     <header id="header" class="header1 row container-fluid p-0 m-0 ">
+        <div class="container-fluid" id="header-search-container">
+            <div class="container d-flex align-items-center search-input-box justify-content-between">
+                <div class="search-left">
+                    <i class="fa-solid fa-xl fa-magnifying-glass " id="site-search-icon"></i><input type="search" id="site-search" name="site-search" placeholder="Search the site">
+                </div>
+                <div class="search-right">
+                    <button onclick="closeSearch()">
+                        <i class="fa-solid fa-xmark fa-lg mb-3"></i>                        
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-container" id="header-container">
+            <div class="col-3 hamburger-col pt-0 text-left">
+                <div class="nav-box pt-3">
+                    <button onclick="openNav();"><i class="fa-solid fa-bars fa-xl header-icon hamburger"></i></button> 
+                </div>          
+            </div>
+            
+            <img alt="Kings Academy Logo" id="logo1" class="logo1 col-6">
+                    
+            <div class="social col-3 pt-4">
+                <a href="https://twitter.com/kowessex" target="_blank" class="social-links"><i class="fa-brands fa-twitter header-icon d-none d-sm-block d-md-block d-lg-block"></i></a>
+                <a href="https://www.facebook.com/kowessex/" target="_blank" class="social-links"><i class="fa-brands fa-facebook-f header-icon d-none d-sm-block d-md-block d-lg-block"></i></a>
+                <button onclick="openSearch()" class="social-links"><i class="fa-solid fa-magnifying-glass header-icon"></i></button>
+            </div>
+        </div>
+    </header>
+
+   
+
+  
+        
+     
+    <div class='slider'>
+
+       
+        <div class="slide slide-1">
+            <video autoplay muted loop class="slide slide-1 hero-video animate__animated animate__fadeIn">
+                <source src="Assets/video/kowcut-v2.mp4" type="video/mp4">
+                
+            </video>
+            <div class="overlay-hero"></div>
+        </div>
+        <div class='slide slide-2'>
+            <div class="overlay-hero"></div>
+        </div>
+        <div class='slide slide-3'>
+            <div class="overlay-hero"></div>
+        </div>
+        <div class='slide slide-4'>
+            <div class="overlay-hero"></div>
+        </div>
+
+        
+    </div>
+
+    
+        <div class="hero-arrow-container text-center">
+            <a class="hero-arrow " href="#welcome"><i class="fa-solid fa-circle-arrow-down fa-2x animate__animated animate__fadeIn animate__delay-2s animate__slower"></i></a>
+        </div>
+        <div class="hero-banner-text-container">
+            <h4 class="hero-banner-text text-center h2 text-white animate__animated animate__fadeIn  animate__slower">Believe and Succeed!</h4>
+        </div>
+    
+
+    <div class="announcement-component animate__animated animate__fadeInRight animate__delay-1s">       
+
+            <div class="announcement-wrapper p-2 " id="announcement-wrapper">
+                <div class="announcement-box col-4 d-none d-lg-block">
+                    <div class="title-line d-flex justify-content-between">
+                        <h5>Annoucements</h5>
+                        <button onclick="announcementClose()">
+                            <i class="fa-solid fa-xmark"></i>                        
+                        </button>
+                    </div>
+
+                        <div class="announcement-slider">
+                            <div class="announcement-content">
+                                <p class="announcement-preview pb-4">The school will be closed on April 1st</p>
+                                <a class="announcement-link" href="https://google.com">Read More</a>  
+                            </div> 
+
+                            <div class="announcement-content">
+                                <p class="announcement-preview pb-4">Kings is the best!</p>
+                                <a class="announcement-link" href="https://google.com">Read More</a>  
+                            </div> 
+                            
+                            
+
+
+                        </div>
+                </div>
+                
+            </div>
+            <a id="bell-button" class="bell-button-mobile d-lg-none" href="#announcement-section" >
+            <div class="bell-background">                      
+                
+                <i class='fa fa-bell faa-ring animated fa-md ringing-bell'></i>
+            </div>
+            </a>
+
+            <a id="bell-button" class="bell-button-desktop d-none d-lg-block" href="https://google.com" >
+                <div class="bell-background">                      
+                    
+                    <i class='fa fa-bell faa-ring animated fa-md ringing-bell'></i>
+                </div>
+            </a>
+
+     </div>
+
+
+
+     
+
+   
+
+   
+
+
+</div>
+
+<section id="announcement-section">
+
+    <div class="container-fluid pt-5 ps-5 d-lg-none" id="announcement-area">
+        <div class="announcement-div-container-box"></div>
+        <h2>Announcements</h2>
+            <div class="announcement-div-slider animate__animated animate__fadeIn animate__slower animate__delay-1s" id="announcement-slider-div">
+                <div class="announcement-div-content">
+                    <p class="announcement-preview">The school will be closed on April 1st</p>
+                    <a class="announcement-link" href="https://google.com">Read More</a>  
+                </div> 
+
+                <div class="announcement-div-content">
+                    <p class="announcement-preview">Kings is the best!</p>
+                    <a class="announcement-link" href="https://google.com">Read More</a>  
+                </div> 
+                    
+            </div>
+        </div>
+    </div>
+
+</section>
+    
+    
+    <main>
+        
+<!-- New welcome section-->
+    <section id="welcome">
+
+        <div class="welcome-background pt-4 pb-4 mb-5">
+
+            <div class="container">
+
+                <div class="row p-5">
+
+                    <div class="col-lg-6 d-flex align-items-center pt-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration='800' >
+                        <div class="left-welcome-content col-10 p-0">
+                                <h3 CLASS="h2">WELCOME</h3>
+                            <h4 class="mt-2">TO KINGS OF WESSEX ACADEMY</h4>
+                            <p class="mt-4 mb-4">"We are delighted that you wish to find out about our school – a place that we consider to be a fantastic community to work and to learn. By ensuring your child’s happiness remains our first priority, we know they will go onto achieve their full potential here with us."</p>
+                            <a href="" class="">READ MORE</a>
+                        </div>
+                    </div>   
+                    <div class="welcome-right-background col-lg-6 pt-5">
+                        
+                        <div class="welcome-img-container pe-5" data-aos="fade-left" data-aos-delay="600" data-aos-duration='800'>
+                            <img src="Assets/images/teacher-and-kids.jpg" alt="Teacher explaining something to two children" class="img-fluid welcome-img">
+                        </div>
+                        
+        
+                    </div>
+
+                </div>  
+
+
+            </div>
+
+        </div>
+              
+
+        <!-- New links section-->
+
+        <div class="container mt-5 p-5">
+            <div class="row mb-5">
+              
+         <div class="col-sm-3 p-2">
+                
+                
+          
+          <div class="img-container img-link-1" style="position: relative;
+          width: 100%;" data-aos="fade-up" data-aos-delay="200">
+
+
+            <a href="https://www.google.com">
+            <div class="mask" style="  position: absolute;
+            background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(20, 20, 20, 0.3));
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;"></div>    
+            
+            <img src="Assets/images/hockey-church.jpg" alt="Avatar" class="image" style="width: 100%;
+            max-height: 200px;
+            object-fit:cover;">
+            <div class="text h6" style="  color: white;
+            
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;">Prospectus</div>
+
+            <div class="overlay" 
+            onMouseOver="this.style.opacity='1'"
+            onMouseOut="this.style.opacity='0'"
+            style="  position: absolute;
+            opacity: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            
+            transition: .5s ease;
+            background-color: rgba(192, 214, 48, 0.85);">
+            
+              <div class="text h6" style="  color: white;
+              
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              text-align: center;">Prospectus</div>
+            </div>
+          </div>
+        </a>
+         </div>
+
+         <div class="col-sm-3 p-2">
+                
+                
+          
+            <div class="img-container img-link-2" style="position: relative;
+            width: 100%;" data-aos="fade-up" data-aos-delay="600">
+  
+  
+              <a href="https://www.google.com">
+              <div class="mask" style="  position: absolute;
+              background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(20, 20, 20, 0.3));
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;"></div>    
+              
+              <img src="Assets/images/microsope.jpg" alt="Avatar" class="image" style="width: 100%;
+              max-height: 200px;
+              object-fit:cover;">
+              <div class="text h6" style="  color: white;
+              
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              text-align: center;">Firefly</div>
+  
+              <div class="overlay" 
+              onMouseOver="this.style.opacity='1'"
+              onMouseOut="this.style.opacity='0'"
+              style="  position: absolute;
+              opacity: 0;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;
+              
+              transition: .5s ease;
+              background-color: rgba(192, 214, 48, 0.85);">
+              
+                <div class="text h6" style="  color: white;
+                
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;">Firefly</div>
+              </div>
+            </div>
+          </a>
+           </div>
+
+           <div class="col-sm-3 p-2">
+                
+                
+          
+            <div class="img-container img-link-3" style="position: relative;
+            width: 100%;" data-aos="fade-up" data-aos-delay="700">
+  
+  
+              <a href="https://www.google.com">
+              <div class="mask" style="  position: absolute;
+              background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(20, 20, 20, 0.3));
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;"></div>    
+              
+              <img src="Assets/images/violin.jpg" alt="Avatar" class="image" style="width: 100%;
+              max-height: 200px;
+              object-fit:cover;">
+              <div class="text h6" style="  color: white;
+              
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              text-align: center;">Safegaurding</div>
+  
+              <div class="overlay" 
+              onMouseOver="this.style.opacity='1'"
+              onMouseOut="this.style.opacity='0'"
+              style="  position: absolute;
+              opacity: 0;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;
+              
+              transition: .5s ease;
+              background-color: rgba(192, 214, 48, 0.85);">
+              
+                <div class="text h6" style="  color: white;
+                
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;">Safegaurding</div>
+              </div>
+            </div>
+          </a>
+           </div>
+
+           <div class="col-sm-3 p-2">
+                
+                
+          
+            <div class="img-container img-link-4" style="position: relative;
+            width: 100%;" data-aos="fade-up" data-aos-delay="800">
+  
+  
+              <a href="https://www.google.com">
+              <div class="mask" style="  position: absolute;
+              background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(20, 20, 20, 0.3));
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;"></div>    
+              
+              <img src="Assets/images/sixth-formers.jpg" alt="Avatar" class="image" style="width: 100%;
+              max-height: 200px;
+              object-fit:cover;">
+              <div class="text h6" style="  color: white;
+              
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              text-align: center;">Payments</div>
+  
+              <div class="overlay" 
+              onMouseOver="this.style.opacity='1'"
+              onMouseOut="this.style.opacity='0'"
+              style="  position: absolute;
+              opacity: 0;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;
+              
+              transition: .5s ease;
+              background-color: rgba(192, 214, 48, 0.85);">
+              
+                <div class="text h6" style="  color: white;
+                
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;">Payments</div>
+              </div>
+            </div>
+          </a>
+           </div>
+            
+          
+
+            
+              
+
+              
+            </div>
+            
+          </div>
+
+
+          
+
+            
+         
+              
+      </section>
+
+
+
+
+
+        <!--NEWS LINKS SECTION-->
+
+        <section id="news">
+
+            <div class="section-headings text-center row">
+                <h2 class="mt-5 mb-3">Latest News</h2>
+                <a href="" class="mb-3" >VIEW ALL NEWS</a>
+            </div> 
+
+            <div class="container mb-5 ps-5 pe-5">
+                <div class="row mb-5 mt-5 " data-aos="fade-up" data-aos-delay="100">
+                
+            <div class="col-sm-4 p-4">
+                    
+                    
+            
+            <div class="img-container img-link-1" style="position: relative;
+            width: 100%;" >
+
+
+                <a href="https://www.google.com" class="news-card">
+                
+            
+                    <div class="card shadow">
+                            
+                        <img src="Assets/images/3d-printer.jpg" class="card-img-top" style="width: 100%;
+                        max-height: 70%;
+                        object-fit:cover;" alt="...">
+
+                        
+                    
+                    <div class="card-body p-3 d-flex-column" id ="news-card-body1">
+                        <h6 class="card-link-text">TECHNOLOGY, COMPETITIONS</h6>
+                        <h4 class="card-link-text">Technology Competition</h4>
+                        <p class="card-link-text"><small>Sept 2022</small></p>
+                    </div>
+                </div>
+
+                
+                <div class="overlay" id="overlay1" 
+                onMouseOver="opacityFunction(); zIndexFuction(); linkColorFunction();"
+                
+                onMouseOut="opacityFunctionR(); zIndexFuctionR(); linkColorFunctionR();"
+                style="  position: absolute;
+                opacity: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                
+                transition: .5s ease;
+                background-color: rgba(192, 214, 48, 0.90);">
+                
+        
+            </div>
+            
+
+            </a>
+            </div>
+            </div>
+
+            <div class="col-sm-4 p-4">
+                    
+                    
+            
+                <div class="img-container img-link-1" style="position: relative;
+                width: 100%;" 
+    
+    
+                <a href="https://www.google.com" class="news-card">
+                
+            
+                    <div class="card shadow">
+                            
+                        <img src="Assets/images/art-girls.jpg" class="card-img-top" style="width: 100%;
+                        max-height: 70%;
+                        object-fit:cover;" alt="...">
+    
+                        
+                    
+                    <div class="card-body p-3 d-flex-column" id ="news-card-body2">
+                        <h6 class="card-link-text">STUDENTS, ART</h6>
+                        <h4 class="card-link-text">EPQ Student Experience</h4>
+                        <p class="card-link-text"><small>Sept 2022</small></p>
+                    </div>
+                </div>
+    
+                
+                <div class="overlay" id="overlay2" 
+                onMouseOver="opacityFunctionTwo(); zIndexFuctionTwo(); linkColorFunctionTwo();"
+                
+                onMouseOut="opacityFunctionRTwo(); zIndexFuctionRTwo(); linkColorFunctionRTwo();"
+                style="  position: absolute;
+                opacity: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                
+                transition: .5s ease;
+                background-color: rgba(192, 214, 48, 0.90);">
+                
+            
+                </div>
+                
+    
+            </a>
+            </div>
+            </div>
+
+            <div class="col-sm-4 p-4">
+                    
+                    
+            
+                <div class="img-container img-link-1" style="position: relative;
+                width: 100%;" >
+    
+    
+                <a href="https://www.google.com" class="news-card">
+                
+            
+                    <div class="card shadow">
+                            
+                        <img src="Assets/images/sixth-formers-boy-and-girl.jpg" class="card-img-top" style="width: 100%;
+                        max-height: 70%;
+                        object-fit:cover;" alt="...">
+    
+                        
+                    
+                    <div class="card-body p-3 d-flex-column" id ="news-card-body3">
+                        <h6 class="card-link-text">STUDENTS, EXAMS</h6>
+                        <h4 class="card-link-text">Top Revision Tips</h4>
+                        <p class="card-link-text"><small>Sept 2022</small></p>
+                    </div>
+                </div>
+    
+                
+                <div class="overlay" id="overlay3" 
+                onMouseOver="opacityFunctionThree(); zIndexFuctionThree(); linkColorFunctionThree();"
+                
+                onMouseOut="opacityFunctionRThree(); zIndexFuctionRThree(); linkColorFunctionRThree();"
+                style="  position: absolute;
+                opacity: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                
+                transition: .5s ease;
+                background-color: rgba(192, 214, 48, 0.90);">
+                
+            
+                </div>
+                
+    
+            </a>
+            </div>
+            </div>
+
+            
+
+            </div>
+            </div>
+
+    </section>
+
+
+        <!--CALENDAR SECTION-->
+        <section id="calendar-section">
+
+            <div class="section-headings mb-5 text-center">
+                <h2>Calendar</h2>
+                <a href="">VIEW FULL CALENDAR</a>
+            </div>
+
+            <div class="calendar-card-group justify-content-center row">
+
+                <div class="calendar-card card col-sm-6 shadow" data-aos="fade-up" data-aos-delay="100">
+                  
+                  <div class="card-body text-center mt-5">
+                        <h5 class="card-title h1">25</h5>
+                        <p class="card-text ">SEPT</p>
+                        <p class="card-text ">GCSE Results Day</p>
+                        <p class="card-text mt-5"><small>1800-1930</small></p>
+                  </div>
+                </div>
+
+                <div class="calendar-card card col-sm-6 shadow" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="card-body text-center mt-5">
+                        <h5 class="card-title h1">25</h5>
+                        <p class="card-text ">JAN</p>
+                        <p class="card-text">GCSE Results Day</p>
+                        <p class="card-text mt-5"><small>1800-1930</small></p>
+                    </div>
+                  
+                  
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION-->
+    <footer class="container-fluid">
+        <div class="footer-content container">
+            <div class="row footer-logo">
+                <div class="col-sm-4">
+                    <img src="Assets/logos/KINGS ACADEMY ICON.svg" alt="Kings Academy Icon" class="footer-icon">
+                </div>
+
+            </div>
+            <div class="row footer-text">
+                <div class="col-sm-4 footer-contact footer-column">
+                    <p>The Kings of Wessex Academy<br>Station Road, Cheddar<br>Somerset BS27 3AQ</p>
+                    <p>Headteacher: Dave Wiltshire</p>
+                    <p><i class="fa-solid fa-phone"></i><span class="footer-spacer"></span>01934742608</p>
+                    <p><a href=""><i class="fa-solid fa-envelope"></i></i><span class="footer-spacer"></span>Email Us</a></p>
+                    <p class="mb-5"><a href=""><i class="fa-solid fa-location-dot"></i></i><span class="footer-spacer"></span>Get Directions</a></p>
+
+                    <div class="footer-social"><a href="https://twitter.com/kowessex" target="_blank" ><i class="fa-brands fa-twitter fa-2xl"></i></a><span class="footer-spacer"></span><span class="footer-spacer"></span><a href="https://www.facebook.com/kowessex/" target="_blank"><i class="fa-brands fa-facebook-f fa-2xl"></i></a></div>
+
+                    <p class="mt-4">A charitable company limited by guarantee<br>
+                        Registered in England<br>
+                        Company Number 7348580</p>
+                    
+                </div>
+                <div class="col-sm-4 footer-links footer-column">
+                    <h4 class="footer heading mb-3">Quick Links</h4>
+                    <a href="" class="footer-link">Download Prospectus</a>
+                    <a href="" class="footer-link">Firefly</a>
+                    
+                </div>
+                
+
+                <div class="col-sm-4 footer-accessability d-flex-column footer-column">
+                    <div class="accesability-top">
+                        <h4 class="footer heading mb-3">Accessability</h4>
+                        <a href="" class="footer-link">Site Map</a>
+                        <a href="" class="footer-link">Terms of Use</a>
+                        <a href="" class="footer-link">Privacy Policy</a> 
+                        <a href="" class="footer-link">Cookie Usage</a> 
+                    </div>
+
+                    <a href="https://wessexlearningtrust.co.uk" target="_blank"><img class="wlt-white mt-5" src="Assets/logos/wlt-white.png" alt=""></a>               
+                </div>
+
+        </div>
+    </footer>
+    <!-- Link to AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS Intialise -->
+    <script>
+        AOS.init();
+      </script>
+
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+   <!--Slick slider-->   
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+
+   <script>
+    
+
+$(document).ready(function(){
+
+$('.slider').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: true,
+fade: true,
+autoplaySpeed: 5000,
+speed: 2000,
+cssEase: 'ease-in-out',
+dots: false,
+touchMove: false,
+arrows:true
+});
+
+
+
+$('.news-carousel').slick({
+
+slidesToShow: 3,
+slidesToScroll: 1,
+autoplay: false,
+
+
+dots:false,
+
+responsive: [{
+  breakpoint: 1024,
+  settings: {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+   //centerMode: true,
+
+  }
+
+}, {
+  breakpoint: 800,
+  settings: {
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    dots: true,
+    infinite: true,
+
+  }
+},  {
+  breakpoint: 480,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  }
+}]
+});
+
+$('.announcement-slider').slick({
+autoplay: true,
+arrows: false,
+autoplaySpeed: 4000
+
+});
+
+$('.announcement-div-slider').slick({
+autoplay: true,
+arrows: false,
+autoplaySpeed: 6000
+
+});
+
+
+});
+
+
+
+
+   </script>
+      
+
+
+
+
+
 </body>
 </html>
