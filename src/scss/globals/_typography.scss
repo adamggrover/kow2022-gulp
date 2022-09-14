@@ -1,5 +1,19 @@
+@use 'colors' as c;
+
 $font-family-base: 'Ubuntu', sans-serif;
 
 p{
     font-family: 'Open Sans', sans-serif; 
+}
+
+.section-title{
+    color: white;
+}
+
+.section-link{
+    font-size: 0.8rem;
+    color: white;
+    &:hover{
+        color: c.$green;
+    }
 }
