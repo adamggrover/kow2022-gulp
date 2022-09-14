@@ -1,7 +1,7 @@
 /* FOOTER SECTION */
 
 footer{
-    background-color: #231F20;
+    background-color: $dark;
     padding: 1.5rem 2rem 2rem 2rem;
 }
 
@@ -10,7 +10,7 @@ footer a{
 }
 
 footer a:hover{
-    color: #BFD630;
+    color: $green;
 }
 
 .footer-column{

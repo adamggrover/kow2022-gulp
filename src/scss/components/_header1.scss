@@ -37,7 +37,7 @@
 }
 
 .header-icon:hover, header a:hover{
-    color: #BFD630;
+    color: $green;
     
 }
 
@@ -89,7 +89,7 @@
 
 #header-search-container{
     width: 100%;
-    background-color: #BFD630;
+    background-color: $green;
     padding: 0;
 
     height: 0; /*  change this with JavaScript */
