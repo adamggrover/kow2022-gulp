@@ -29,30 +29,14 @@ $enable-gradients: true;
 $enable-shadows: true;
 
 // Customize some defaults
-$body-color: #231F20;
-$body-bg: #F5F5F5;
-$border-radius: .4rem;
+
+
 
 
 // Configuration
 @import "bootstrap/scss/functions";
 
-//Variable Overrides
 
-$font-family-base: 'Ubuntu', sans-serif;
-
-
-$dark-purple:  #6610f2;
-$purple:  #5B2A84;
-$green:   #BFD630;
-$light:   #F5F5F5;
-$dark:    #231F20;
-
-
-
-$primary:       $green;
-$secondary:     $purple;
-$success:       $dark-purple;
 
 
 
