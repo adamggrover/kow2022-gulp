@@ -13,7 +13,7 @@
 .calendar-card{
     background-color: #white;
     padding: 0 2rem;
-    max-width: fit-content;
+    max-width: 17rem;
     min-height: 20rem;    
     color: white;    
     border-radius: 0;
@@ -22,7 +22,7 @@
 
 .calendar-card:hover{
     background-color: g.$green;
-    border-color: g.$green;
+    border-color: rgba((g.$green), 0.9);
 }
 
 .calendar-card-group{
