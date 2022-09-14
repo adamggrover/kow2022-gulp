@@ -1,3 +1,5 @@
+@use 'globals' as g;
+  
   /*HERO Slider*/
   
   .slide {
@@ -64,7 +66,7 @@
     }
 
     .announcement-box{
-      background-color: $purple;
+      background-color: g.$purple;
       width: 15rem;      
       padding: 1rem;
       display: flex;
@@ -89,7 +91,7 @@
     }
 
     .hero-wrapper a:hover{
-      color: $green;
+      color: g.$green;
     }
 
 
@@ -102,7 +104,7 @@
       height: 2.5rem;
       width: 2.5rem;
       border-radius: 25rem;
-      background-color: $purple;
+      background-color: g.$purple;
       text-align: center;
       display: flex;
       border: 1px solid white;
@@ -151,7 +153,7 @@
   z-index: 3; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #F5F5F5; 
+  background-color: g.$light; 
   
   
   
@@ -185,7 +187,7 @@ main {
   
 }
 #MainMenu *{
-  color: $dark;
+  color: g.$dark;
 }
 
 
@@ -227,6 +229,7 @@ a.list-group-item:hover{
   text-decoration: none;
   font-size: 1.2rem;
 }
+
 
 a:hover{
   color: white;

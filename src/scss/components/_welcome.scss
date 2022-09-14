@@ -1,7 +1,10 @@
 /* WELCOME SECTION */
 
+
+@use 'globals' as g;
+
 #welcome{
-    background-color: $dark;
+    background-color: g.$dark;
     color: white;
     padding-top: 2rem;
     

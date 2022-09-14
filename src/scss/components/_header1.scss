@@ -1,4 +1,5 @@
 
+@use 'globals' as g;
 
 
 .header-container {
@@ -37,7 +38,7 @@
 }
 
 .header-icon:hover, header a:hover{
-    color: $green;
+    color: g.$green;
     
 }
 
@@ -89,7 +90,7 @@
 
 #header-search-container{
     width: 100%;
-    background-color: $green;
+    background-color: g.$green;
     padding: 0;
 
     height: 0; /*  change this with JavaScript */

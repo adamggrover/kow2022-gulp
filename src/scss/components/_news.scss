@@ -1,5 +1,7 @@
+@use 'globals' as g;
+
 #news{
-  background-color: $dark;
+  background-color: g.$dark;
   padding-top: 4rem;
   padding-bottom: 5rem;
  
@@ -8,7 +10,7 @@
 
 .card{
   border-radius: 0;
-  border: #F5F5F5 solid 1rem;
+  border: g.$light solid 1rem;
 }
 
 .card-top{

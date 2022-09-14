@@ -1,7 +1,9 @@
 /* FOOTER SECTION */
 
+@use 'globals' as g;
+
 footer{
-    background-color: $dark;
+    background-color: g.$dark;
     padding: 1.5rem 2rem 2rem 2rem;
 }
 
@@ -10,7 +12,7 @@ footer a{
 }
 
 footer a:hover{
-    color: $green;
+    color: g.$green;
 }
 
 .footer-column{

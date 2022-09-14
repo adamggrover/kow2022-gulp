@@ -1,5 +1,7 @@
+@use 'globals' as g;
+
 #announcement-area{
-    background-color: $purple;
+    background-color: g.$purple;
     color: white;
     position: relative;
     padding-bottom: 2rem;

@@ -1,6 +1,8 @@
+@use 'globals' as g;
+
 #main-page-area{
     min-height: 80rem;
-    background-color: $light;
+    background-color: g.$light;
     padding-top: 6rem;
     max-width: 70rem;
 }
@@ -15,7 +17,7 @@
 }
 
 .content-header-breadcrumb-links{
-    color: $green; 
+    color: g.$green; 
 }
 .breadcrumb-spacer{
     width: 0.5rem;
@@ -37,7 +39,7 @@
 }
 
 #content-h1{
-    color: $dark-purple;
+    color: g.$dark-purple;
     margin-top: 3rem;
     font-weight: 700;
     font-size: 48px;
@@ -61,7 +63,7 @@
 }
 
 #sidebar-section-nav{
-    background-color: $dark-purple;
+    background-color: g.$dark-purple;
     width: 100%;
     min-height: 40rem;
 }
