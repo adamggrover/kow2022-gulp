@@ -18,6 +18,8 @@ p{
     }
 }
 
+//News Section
+
 .news-tags{
     color: c.$dark-purple;
 }
@@ -27,5 +29,24 @@ p{
 }
 
 .news-date{
+    color: c.$muted;
+}
+
+//Calendar Section
+
+.calendar-date{
+    color: c.$dark-purple;
+}
+
+.calendar-month{
+    color: c.$dark;
+
+}
+
+.calendar-event{
+    color: c.$dark-purple;
+}
+
+.calendar-time{
     color: c.$muted;
 }
