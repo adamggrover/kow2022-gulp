@@ -180,15 +180,23 @@ main {
 
 /* Navbar */
 
+
+
 #MainMenu{
   width: 100%;
-  
-  
-  
+  padding: 2rem;
+  white-space: nowrap;
+   
 }
 #MainMenu *{
+  
   color: g.$dark;
+  &:hover{
+    color: g.$dark-purple;
+    
+  }
 }
+
 
 
 .list-group.panel > .list-group-item {
